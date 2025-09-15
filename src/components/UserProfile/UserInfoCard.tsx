@@ -33,6 +33,7 @@ export default function UserInfoCard() {
   });
   const [selectedImage] = useState<File | null>(null);
   const [previewUrl, setPreviewUrl] = useState<string | null>(null);
+console.log("previewUrl",previewUrl);
 
   // Handle input changes
   const handleChange = (
@@ -103,17 +104,17 @@ export default function UserInfoCard() {
       console.log("API Error", error);
     }
   };
-  const [, setSocialLinks] = useState({
-    facebook: "",
-    x: "https://x.com/PimjoHQ",
-    linkedin: "https://www.linkedin.com/company/pimjo",
-    instagram: "https://instagram.com/PimjoHQ",
-  });
+  // const [, setSocialLinks] = useState({
+  //   facebook: "",
+  //   x: "https://x.com/PimjoHQ",
+  //   linkedin: "https://www.linkedin.com/company/pimjo",
+  //   instagram: "https://instagram.com/PimjoHQ",
+  // });
 
-  const handleSocialChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = e.target;
-    setSocialLinks((prev) => ({ ...prev, [name]: value }));
-  };
+  // const handleSocialChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  //   const { name, value } = e.target;
+  //   setSocialLinks((prev) => ({ ...prev, [name]: value }));
+  // };
   return (
     <>
       <div className="p-2  mb-5 bg-white dark:bg-gray-900">
