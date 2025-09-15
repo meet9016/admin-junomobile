@@ -31,7 +31,7 @@ const navItems: NavItem[] = [
   {
     icon: <i className="pi pi-whatsapp text-xl"></i>,
     name: "Inquiries",
-    path: "/inquiries",
+    path: "/order",
   },
   {
     icon: <i className="pi pi-users text-xl"></i>,
@@ -46,7 +46,7 @@ const navItems: NavItem[] = [
   {
     icon: <i className="pi pi-check-circle text-xl"></i>,
     name: "Verification",
-    path: "/get-verified",
+    path: "/verification",
   },
   {
     icon: <i className="pi pi-megaphone text-xl"></i>,
@@ -56,7 +56,7 @@ const navItems: NavItem[] = [
   {
     icon: <i className="pi pi-credit-card text-xl"></i>,
     name: "Invoice",
-    path: "/invoice",
+    path: "/subscription",
   },
   {
     icon: <i className="pi pi-phone text-xl"></i>,
@@ -110,7 +110,6 @@ const AppSidebar: React.FC = () => {
   );
   const subMenuRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
-  // Function to check if the menu item is active
   const isActive = useCallback(
     (path: string) => location.pathname === path,
     [location.pathname]

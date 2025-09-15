@@ -18,6 +18,10 @@ import Success from "./pages/Payment/Success";
 import Support from "./pages/Support/Support";
 import Subscription from "./pages/Subscription/Subscription";
 import MyShop from "./pages/MyShop/myshop";
+import Inquiry from "./pages/Inquiry/inquiry";
+import Followers from "./pages/Followers/followers";
+import Verification from "./pages/Verification/verification";
+import AdvertisePage from "./pages/Advertise/advertise";
 
 export default function App() {
   return (
@@ -36,6 +40,10 @@ export default function App() {
               <Route path="/subscription" element={<Subscription />} />
               <Route path="/support" element={<Support />} />
               <Route path="/myshop" element={<MyShop />} />
+              <Route path="/inquiry" element={<Inquiry />} />
+              <Route path="/followers" element={<Followers />} />
+              <Route path="/verification" element={<Verification />} />
+              <Route path="/advertise" element={<AdvertisePage />} />
               <Route path="/add-product" element={<ProductForm />} />
               <Route path="/form-elements" element={<FormElements />} />
               <Route path="/basic-tables" element={<BasicTables />} />

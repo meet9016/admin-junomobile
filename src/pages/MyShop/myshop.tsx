@@ -176,7 +176,7 @@ export default function MyShop() {
           </div>
 
           {/* Save Button */}
-          <div className="flex justify-end mt-4">
+          <div className="flex justify-end">
             <button
               className="bg-[#241B4B] hover:bg-[#3a2d6e] text-white shadow-md px-6 py-2 rounded-lg transition"
               // onClick={handleSave}

@@ -227,7 +227,12 @@ export default function RecentOrders({ viewProduct }: viewProductProps) {
     <>
       <div className="space-y-6">
         <ComponentCard title="Most View Product">
-          <div className="card">
+           <div className="
+  min-h-[250px] 
+  sm:min-h-[300px] 
+  md:min-h-[320px] 
+  lg:min-h-[390px]
+">
             <Toast ref={toast} />
             <DataTable
               value={viewProduct}
