@@ -7,6 +7,7 @@ import { useEffect, useState } from "react";
 import api from "../utils/axiosInstance";
 import endPointApi from "../utils/endPointApi";
 import MostViewInquiry from "../../components/ecommerce/MostViewInquiry";
+import MostViewFollowers from "../../components/ecommerce/MostviewFollowers";
 
 export default function Home() {
   const [dashboardData, setDashboardData] = useState<any>(null);
@@ -37,7 +38,7 @@ export default function Home() {
         description="This is React.js Ecommerce Dashboard page for TailAdmin - React.js Tailwind CSS Admin Dashboard Template"
       />
       <div className="grid grid-cols-12 gap-4 md:gap-6">
-        <div className="col-span-12 space-y-6 xl:col-span-7">
+        <div className="col-span-12 space-y-6 xl:col-span-12">
           {dashboardData && (
             <EcommerceMetrics
               totalProducts={dashboardData.total_products}
@@ -48,30 +49,27 @@ export default function Home() {
           <MonthlySalesChart yearlyInquiry={yearlyInquiry} />
         </div>
 
-        <div className="col-span-12 xl:col-span-5">
+        <div className="col-span-12 xl:col-span-6">
           <MostViewInquiry
             productInquiry={dashboardData?.most_product_inquiry || []}
           />
         </div>
-
-        {/* <div className="col-span-12">
-          <StatisticsChart />
-        </div> */}
-
-        <div className="col-span-12 xl:col-span-5">
-          {/* <DemographicCard /> */}
+       
+        <div className="col-span-12 xl:col-span-6">
           <RecentOrders viewProduct={dashboardData?.most_view_location || []} />
         </div>
 
-        <div className="col-span-12 xl:col-span-7">
-          {/* <RecentOrders /> */}
-          {/* <MostViewInquiry
-            productInquiry={dashboardData?.most_product_inquiry || []}
-          /> */}
+        <div className="col-span-12 xl:col-span-6">
           <DemographicCard
             viewLocation={dashboardData?.most_view_location || []}
           />
         </div>
+         <div className="col-span-12 xl:col-span-6">
+          <MostViewFollowers
+            productInquiry={dashboardData?.most_product_inquiry || []}
+          />
+        </div>
+
       </div>
     </>
   );

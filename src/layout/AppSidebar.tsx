@@ -23,11 +23,6 @@ const navItems: NavItem[] = [
     name: "Dashboard",
     path: "/",
   },
-  // {
-  //   icon: <UserCircleIcon />,
-  //   name: "User Profile",
-  //   path: "/profile",
-  // },
   {
     icon: <BoxCubeIcon />,
     name: "Product",
@@ -35,37 +30,41 @@ const navItems: NavItem[] = [
   },
   {
     icon: <i className="pi pi-whatsapp text-xl"></i>,
-    name: "Inquiry",
-    path: "/order",
+    name: "Inquiries",
+    path: "/inquiries",
   },
   {
-    icon:  <i className="pi pi-credit-card  text-xl"></i>,
+    icon: <i className="pi pi-users text-xl"></i>,
+    name: "Followers",
+    path: "/followers",
+  },
+  {
+    icon: <i className="pi pi-shopping-bag text-xl"></i>,
+    name: "My Shop",
+    path: "/myshop",
+  },
+  {
+    icon: <i className="pi pi-check-circle text-xl"></i>,
+    name: "Verification",
+    path: "/get-verified",
+  },
+  {
+    icon: <i className="pi pi-megaphone text-xl"></i>,
+    name: "Advertise",
+    path: "/advertise",
+  },
+  {
+    icon: <i className="pi pi-credit-card text-xl"></i>,
     name: "Invoice",
-    path: "/subscription",
+    path: "/invoice",
   },
   {
     icon: <i className="pi pi-phone text-xl"></i>,
     name: "Support",
     path: "/support",
   },
-  // {
-  //   name: "Forms",
-  //   icon: <ListIcon />,
-  //   subItems: [{ name: "Form Elements", path: "/form-elements", pro: false }],
-  // },
-  // {
-  //   name: "Tables",
-  //   icon: <TableIcon />,
-  //   subItems: [{ name: "Basic Tables", path: "/basic-tables", pro: false }],
-  // },
-  // {
-  //   name: "Pages",
-  //   icon: <PageIcon />,
-  //   subItems: [
-  //     { name: "404 Error", path: "/error-404", pro: false },
-  //   ],
-  // },
 ];
+
 
 const othersItems: NavItem[] = [
   // {
